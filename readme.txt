@@ -1,0 +1,2 @@
+rest是一个Web工程，可以直接放置到Tomcat下运行。更多细节，请参阅rest里面的readme.txt文档。
+source是项目对应的源代码。

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML charset="UTF-8">
+<html>
+    <head>
+        <title>Restful WebService 测试客户端</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="js/jquery-1.6.1.min.js" ></script>
+        <script type="text/javascript" src="js/webserviceClient.js"></script>
+    </head>
+	<body marginwidth="0" marginheight="0" style="overflow-x:hidden; overflow-y:hidden;" scroll="no" topmargin="0" leftmargin="0">
+		
+		<div id="actionDiv" style="width: 100%; height: 40px; position: relative; top: 10pt; left: 15pt; border: 0px solid red;">
+			<div>
+			      <input type="button" id="displayGetAction" value="Get操作" role="button">
+				  <input type="button" id="displayPostAction" value="Post操作" role="button">
+			</div>
+			<div>
+				<input type="text" value="http://127.0.0.1:8080/rest/restlet/getdemo" style="width: 50%;display: none;" id="webServiceURL" name="webServiceURL">
+				<input type="submit" id="getActionButton" value="Get" role="button" style="display: none;">
+				<input type="submit" value="Post" id="postActionButton" role="button" style="display: none;">
+			</div>
+			<div id="receiver" style="display: none;"> <textarea id="txtReceive" cols="100" rows="5"></textarea></div>
+			<div id="postActionKeyValue" style="display: none;">
+				<div><input type="text" value="key1" id="key1" name="key1"><input type="text" value="value1" id="value1" name="value1"></div> 
+				<div><input type="text" value="key2" id="key2" name="key2"><input type="text" value="value2" id="value2" name="value2"></div> 
+				<div><input type="text" value="key3" id="key3" name="key3"><input type="text" value="value3" id="value3" name="value3"></div>
+				<input type="submit" id="addKeyValueRow" value="add" role="button">
+			</div>
+	</body>
+</html>
